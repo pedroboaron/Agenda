@@ -1,0 +1,32 @@
+server:
+  port: 9010
+
+spring:
+  mvc:
+    servlet:
+      path: /pessoas-service
+  application:
+    name: pessoas-service
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Pessoas
+    username: postgres
+    password: postgres
+    continueOnError: true
+    initialSize: 0
+    timeBetweenEvictionRunsMillis: 5000
+    minEvictableIdleTimeMillis: 5000
+    minIdle: 0
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update
+        temp:
+          use_jdbc_metadata_defaults: false

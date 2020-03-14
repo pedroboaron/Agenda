@@ -1,0 +1,8 @@
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/event/listener/RecursoCriadoListener.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/service/IUsuarioService.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/repository/UsuarioRepository.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/UsuariosServiceApplication.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/service/UsuarioService.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/event/RecursoCriadoEvent.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/model/Usuario.java
+/home/pedroboaron/Área de Trabalho/individual/usuario-service/src/main/java/com/pedro/usuariosservice/controller/UsuarioController.java
