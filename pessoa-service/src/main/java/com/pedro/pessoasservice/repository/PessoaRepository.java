@@ -3,6 +3,7 @@ package com.pedro.pessoasservice.repository;
 import com.pedro.pessoasservice.model.Pessoa;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -18,6 +19,8 @@ public interface PessoaRepository extends JpaRepository<Pessoa, Integer> {
     Page<Pessoa> findAll(Pageable pageable);
 
     List<Pessoa> findByEmailContaining(String email);
+
+    List<Pessoa> findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining (String telefone,String email,String endereco,String nome);
 
     List<Pessoa> findByTelefoneContaining(String telefone);
 

@@ -61,6 +61,11 @@ public class PessoaService implements IPessoaService {
     }
 
     @Override
+    public List<Pessoa> findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining(String telefone,String email,String endereco,String nome) {
+        return pessoaRepository.findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining (telefone,email,endereco,nome);
+    }
+
+    @Override
     public List<Pessoa> findByEmailContaining(String email) {  return pessoaRepository.findByEmailContaining(email);   }
 
 

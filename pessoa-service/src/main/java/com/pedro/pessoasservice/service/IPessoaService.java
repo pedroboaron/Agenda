@@ -22,6 +22,8 @@ public interface IPessoaService {
 
     void deleteById(Integer id) throws Exception;
 
+    List<Pessoa> findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining (String telefone,String email,String endereco,String nome);
+
     Pessoa findById(Integer id);
 
     List<Pessoa> findByEnderecoContaining(String endereco);
