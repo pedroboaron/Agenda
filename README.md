@@ -11,7 +11,7 @@
           TABLESPACE = pg_default
           CONNECTION LIMIT = -1;"
           
-para o usuário e senha escolhido juntamente com a porta que o postgres será executado essas informações devem ser colocadas no aplicaton.yml do pessoa-serivice que fica dentro da pasta "Agenda\pessoa-service\src\main\resources" como exemplificado abaixo
+para o usuário e senha escolhido juntamente com a porta que o postgres será executado essas informações devem ser colocadas no aplication.yml do pessoa-serivice que fica dentro da pasta "Agenda\pessoa-service\src\main\resources" como exemplificado abaixo
 
   datasource:
     driverClassName: org.postgresql.Driver
