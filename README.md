@@ -19,8 +19,8 @@ para o usuário e senha escolhido juntamente com a porta que o postgres será ex
     username: postgres (usuario)
     password: postgres (senha)
     
-para a o acionamento do back-end é necessário criar o jar ou instanciar pela ide, existem algumas formas, possuindo o maven basta dentro da pasta Agenda\pessoa-service\ executar o comando "mvn spring-boot:run", para outras opções http://www.appsdeveloperblog.com/run-spring-boot-app-from-a-command-line/, requisitado jdk8 ou superior e maven
+para a o acionamento do back-end é necessário criar o jar ou instanciar pela ide, existem algumas formas, possuindo o maven basta dentro da pasta Agenda\pessoa-service\ executar o comando no terminal "mvn spring-boot:run", para outras opções http://www.appsdeveloperblog.com/run-spring-boot-app-from-a-command-line/, requisitado jdk8 ou superior e maven
 
-para a aplicação angular é necessário instalar o Node Js "https://nodejs.org/en/" e o angular cli "https://cli.angular.io/", nessa ordem necessariamente, após ambos feitos basta dar o comando "ng serve -o" dentro da pasta Agenda\angular\ que o serviço será startado.
+para a aplicação angular é necessário instalar o Node Js "https://nodejs.org/en/" e o angular cli "https://cli.angular.io/", nessa ordem necessariamente, após ambos feitos executar no terminal dentro da pasta Agenda\angular\ "npm install @mdi/angular-material" e "npm i ng2-search-filter --save" e então basta dar o comando "ng serve -o" dentro da pasta que o serviço será startado.
  
  
