@@ -1,0 +1,31 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Editar Contato</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="Nome">Nome:</label>
+      <input type="text" formControlName="nome" placeholder="Nome" name="nome" class="form-control" id="nome">
+      <small *ngIf="editForm.controls.nome.invalid && !editForm.controls.nome.pristine">Informe o nome</small>
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone:</label>
+      <input formControlName="telefone" placeholder="Telefone" name="telefone" class="form-control" id="telefone">
+      <small *ngIf="editForm.controls.telefone.invalid && !editForm.controls.telefone.pristine">Somente números com ou sem DDD</small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input formControlName="email" placeholder="example@domain.com" name="lastName" class="form-control" id="email">
+      <small *ngIf="editForm.controls.email.invalid && !editForm.controls.email.pristine">O email informado não está no padrão</small>
+    </div>
+
+    <div class="form-group">
+      <label for="endereco">Endereço:</label>
+      <input formControlName="endereco" placeholder="Endereço" name="endereco" class="form-control" id="endereco">
+    </div>
+
+    <button class="btn btn-success " style="margin: 10px" [disabled]="editForm.invalid">Atualizar</button>
+    <button class="btn btn-danger" (click)="cancelar()"> Cancelar</button>
+  </form>
+</div>
