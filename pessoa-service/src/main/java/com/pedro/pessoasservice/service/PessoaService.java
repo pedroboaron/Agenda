@@ -25,11 +25,6 @@ public class PessoaService implements IPessoaService {
     }
 
     @Override
-    public Page<Pessoa> findAll(Pageable pageable) {
-        return pessoaRepository.findAll(pageable);
-    }
-
-    @Override
     public Pessoa save(Pessoa pessoa) {
         return pessoaRepository.save(pessoa);
     }
@@ -61,30 +56,8 @@ public class PessoaService implements IPessoaService {
     }
 
     @Override
-    public List<Pessoa> findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining(String telefone,String email,String endereco,String nome) {
-        return pessoaRepository.findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining (telefone,email,endereco,nome);
-    }
-
-    @Override
-    public List<Pessoa> findByEmailContaining(String email) {  return pessoaRepository.findByEmailContaining(email);   }
-
-
-    @Override
-    public List<Pessoa> findByTelefoneContaining(String telefone) {  return pessoaRepository.findByTelefoneContaining(telefone);   }
-
-    @Override
     public Pessoa findById(Integer id) {
         Optional<Pessoa> resultado = this.pessoaRepository.findById(id);
         return resultado.orElse(null);
-    }
-
-    @Override
-    public List<Pessoa> findByEnderecoContaining(String endereco) {
-        return pessoaRepository.findByEnderecoContaining(endereco);
-    }
-
-    @Override
-    public List<Pessoa> findByNomeContaining(String nome) {
-        return pessoaRepository.findByNomeContaining(nome);
     }
 }

@@ -16,19 +16,7 @@ public interface PessoaRepository extends JpaRepository<Pessoa, Integer> {
 
     List<Pessoa> findAll();
 
-    Page<Pessoa> findAll(Pageable pageable);
-
-    List<Pessoa> findByEmailContaining(String email);
-
-    List<Pessoa> findByTelefoneContainingOrEmailContainingOrEnderecoContainingOrNomeContaining (String telefone,String email,String endereco,String nome);
-
-    List<Pessoa> findByTelefoneContaining(String telefone);
-
     Optional<Pessoa> findById (Integer id);
-
-    List<Pessoa> findByEnderecoContaining (String endereco);
-
-    List<Pessoa> findByNomeContaining (String nome);
 
     void deleteById (Integer id);
 
