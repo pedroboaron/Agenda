@@ -11,12 +11,13 @@
           TABLESPACE = pg_default
           CONNECTION LIMIT = -1;"
           
-para o usuário e senha escolhido juntamente com a porta que o postgres será executado essas informações devem ser colocadas no aplication.yml do pessoa-serivice que fica dentro da pasta "Agenda\pessoa-service\src\main\resources" como exemplificado aba  
-  # datasource
-   # driverClassName: org.postgresql.Driver
-   # url: jdbc:postgresql://localhost:5432/Pessoas (porta e nome do datasouce criado)
-   # username: postgres (usuario)
-   # password: postgres (senha)
+para o usuário e senha escolhido juntamente com a porta que o postgres será executado essas informações devem ser colocadas no aplication.yml do pessoa-serivice que fica dentro da pasta "Agenda\pessoa-service\src\main\resources" como exemplificado abaixo  
+
+   datasource
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Pessoas (porta e nome do datasouce criado)
+    username: postgres (usuario)
+    password: postgres (senha)
     
 para a o acionamento do back-end é necessário criar o jar ou instanciar pela ide, existem algumas formas, possuindo o maven basta dentro da pasta Agenda\pessoa-service\ executar o comando "mvn spring-boot:run", para outras opções http://www.appsdeveloperblog.com/run-spring-boot-app-from-a-command-line/, requisitado jdk8 ou superior e maven
 
